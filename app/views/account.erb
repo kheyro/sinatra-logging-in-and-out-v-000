@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <% if Helpers.logged_in? %>
+    <% if Helpers.logged_in?(@session) %>
       <h1>Welcome <%= </h1>
       <h3>Your Balance: 1000.0</h3>
     <% else %>
